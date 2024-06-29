@@ -6,9 +6,10 @@ const Wheel = () => {
     const [names, setNames] = useState([
         "Afnan",
         "Araf",
-        "Alvi",
-        "Arabi",
         "Fahim",
+        "faru",
+        "Afriha",
+        "Afrihan",
     ]);
     const [name, setName] = useState("");
 
@@ -19,13 +20,8 @@ const Wheel = () => {
     return (
         <div className="flex items-center justify-center h-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-                {names?.length > 1 ? (
-                    <WheelGenerator names={names} />
-                ) : (
-                    <div>
-                        <p>Please Add at least 2 names</p>
-                    </div>
-                )}
+                <WheelGenerator names={names} />
+
                 <div className="flex items-center ">
                     <div className="space-x-2">
                         <input
