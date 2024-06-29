@@ -3,14 +3,7 @@ import React, { useState } from "react";
 import WheelGenerator from "./WheelGenerator";
 
 const Wheel = () => {
-    const [names, setNames] = useState([
-        "Afnan",
-        "Araf",
-        "Fahim",
-        "faru",
-        "Afriha",
-        "Afrihan",
-    ]);
+    const [names, setNames] = useState([]);
     const [name, setName] = useState("");
 
     const addNames = () => {
