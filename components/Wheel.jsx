@@ -8,6 +8,7 @@ const Wheel = () => {
 
     const addNames = () => {
         setNames((prev) => [...prev, name]);
+        setName("");
     };
     // console.log(names);
     return (
